@@ -1,0 +1,96 @@
+'use client'
+import Image from "next/image";
+import hero5 from "../../_assets/images/hero5.jpg";
+import Numbers from "../../_components/numbers";
+
+
+
+  function percFinder(num,deno) {
+    let val = ((num/deno)*100).toFixed()
+
+    return val
+  } 
+
+const numbers = [
+  {
+    num: "1 Lakh+",
+    text: "farmer community",
+    numberAchieved: 12000,
+    width: `w-[${percFinder(12000,100000)}]`,
+    perc: percFinder(12000,100000),
+    // unit:'Lakh'
+  },
+  {
+    num: "3000",
+    text: "Team Members",
+    numberAchieved: 100,
+    width: "w-[50%]",
+    perc: percFinder(324,3000),
+  },
+  {
+    num: "10,000 Cr",
+    text: "Company Valuation",
+    numberAchieved: 1,
+    width: "w-[63%]",
+    perc: percFinder(100,10000),
+  },
+  {
+    num: "100",
+    text: "Unique Agricultural Center",
+    numberAchieved: 7,
+    width: "w-[70%]",
+    perc: percFinder(10,150),
+  },
+  {
+    num: "1 Million",
+    text: "Acres Of Farms Lands",
+    numberAchieved: 2310,
+    width: "w-[41%]",
+    perc: percFinder(23100,1000000),
+  },
+  {
+    num: "15",
+    text: "Sustainable crop models",
+    numberAchieved: 11,
+    width: "w-[82%]",
+    perc: percFinder(11,15),
+  },
+];
+
+const OurNumber = () => {
+
+
+
+  return (
+    <div
+      className={`w-full h-auto min-h-screen flex flex-col lg:flex-row gap-6 lg:gap-0 p-10 relative `}
+    >
+      <Image
+        src={hero5}
+        alt="Background field"
+        fill
+        priority
+        className="object-cover object-left -z-10"
+      />
+      <div className="w-full absolute top-0 left-0 h-full bg-black/30 z-9"></div>
+      <div className=" heading leftNumber w-full relative z-10 lg:w-[50%]   font-[curvyText] text-white">
+        Our Target <br className="hidden md:relative" />
+        till <span className="italic">2030</span>
+      </div>
+      <div className="rightNumber w-full relative z-10 lg:w-[50%]  flex flex-col md:flex-row flex-wrap gap-8  md:gap-10  justify-center items-center p-4 backdrop-blur-md rounded-lg md:my-auto ">
+        {numbers.map((e, i) => (
+          <Numbers
+            num={e.num}
+            text={e.text}
+            numberAchieved={e.numberAchieved}
+            key={i}
+            perc={e.perc}
+            width={e.width}
+          ></Numbers>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default OurNumber;
