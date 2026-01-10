@@ -14,7 +14,7 @@ const blogs = [
     date: 'Jan 15, 2025',
     readTime: '10 min',
     cover: hero1,
-    path: '/blog/why-spectrum'
+    path: '/blog/why-spectrum/'
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const blogs = [
     date: 'Jan 10, 2025',
     readTime: '7 min',
     cover: hero2,
-    path: '/blog/digital-village'
+    path: '/blog/digital-village/'
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const blogs = [
     date: 'Jan 5, 2025',
     readTime: '6 min',
     cover: hero3,
-    path: '/blog/regenerative-farming'
+    path: '/blog/regenerative-farming/'
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const blogs = [
     date: 'Dec 28, 2024',
     readTime: '5 min',
     cover: hero4,
-    path: '/blog/farm-collectives'
+    path: '/blog/farm-collectives/'
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ const blogs = [
     date: 'Dec 20, 2024',
     readTime: '8 min',
     cover: hero5,
-    path: '/blog/market-linkages'
+    path: '/blog/market-linkages/'
   },
   {
     id: 6,
@@ -64,7 +64,7 @@ const blogs = [
     date: 'Dec 15, 2024',
     readTime: '12 min',
     cover: hero6,
-    path: '/blog/support-farmers'
+    path: '/blog/support-farmers/'
   },
   {
     id: 7,
@@ -74,7 +74,7 @@ const blogs = [
     date: 'Dec 10, 2024',
     readTime: '6 min',
     cover: hero1,
-    path: '/blog/zero-waste-farms'
+    path: '/blog/zero-waste-farms/'
   }
 ]
 

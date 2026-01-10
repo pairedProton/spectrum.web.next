@@ -1,12 +1,15 @@
 import Script from 'next/script'; // Import Script for GTM noscript and other external scripts
 import './globals.css';
+import Navbar from './_components/navbar';
 // --- A. METADATA: Handles <title>, <meta> tags, and verification ---
 // This replaces all your <meta> tags and <title> from the old <head>.
 export const metadata = {
   // Primary Meta Tags
   title: 'Spectrum – Sustainable & Zero-Waste Agriculture in India',
-  description: 'Spectrum is a Renovating agricultral and new-age agri-enterprise committed to zero-waste farming, sustainable cultivation, and connecting farmers with buyers and investors.',
-  keywords: 'sustainable agriculture, zero-waste farming, organic, invest, partner, sustainable agriculture India, zero-waste farming, organic farming company, farm-to-market solutions, agriculture enterprise India, farmer empowerment, agri business India, Spectrum agriculture',
+  description:
+    'Spectrum Agriculture is a renovating agricultural and new-age agri-enterprise committed to leading sustainable agriculture and organic farming in Odisha, offering zero-waste farming solutions, farm-to-market services, guidance on how to start organic farming, agriculture startup support, connecting farmers with buyers and investors, farmer empowerment programs, and growing with a trusted agriculture enterprise in India.',
+  keywords:
+    'Sustainable agriculture, sustainable agriculture India, regenerative farming India, zero-waste farming, zero-waste farming India, zero-waste organic farming, organic farming, organic farming company in Odisha, how to start organic farming, organic farm solutions, farm-to-market solutions, farm-to-market solutions odisha, Agri business India, agriculture enterprise India, low-cost sustainable farming, farmer empowerment, rural entrepreneurship odisha, agriculture startup, investment & partnership, Spectrum agriculture',
   
   // Google Search Console Verification
   verification: {
@@ -71,6 +74,7 @@ export default function RootLayout({ children }) {
       
       <body>
         {/* E. GTM NOSCRIPT: Remains at the very top of the <body> */}
+        <Navbar/>
         <noscript>
           <iframe 
             src="https://www.googletagmanager.com/ns.html?id=GTM-NM73RXTG" 
