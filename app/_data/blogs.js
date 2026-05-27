@@ -75,6 +75,16 @@ const blogs = [
     readTime: '6 min',
     cover: hero1,
     path: '/blog/zero-waste-farms/'
+  },
+  {
+    id: 8,
+    title: 'Transforming Indian Sustainable Agriculture with Innovation and Purpose',
+    summary: 'Discover how Spectrum is revolutionizing Indian agriculture through four specialized models—Setu, Krishi, Suddh, and Vikash—bringing innovation, opportunity, and empowerment to farmers.',
+    category: 'Company Overview',
+    date: 'Jan 10, 2025',
+    readTime: '15 min',
+    cover: hero2,
+    path: '/blog/transforming-agriculture/'
   }
 ]
 
